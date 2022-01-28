@@ -5,16 +5,18 @@
   "license": "ISC",
   "repository": "<Add your repository here>",
   "devDependencies": {
+    "@sap/ux-specification": "^1.96.2",
     "sqlite3": "^5.0.2"
   },
   "cds": {
     "requires": {
       "db": {
         "kind": "sqlite",
-        "credentials": {
-          "database": "sqlite.db"
-        }
+        "model": "*"
       }
     }
-  }
+  },
+  "sapux": [
+    "app/networkobjects"
+  ]
 }
